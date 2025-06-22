@@ -296,7 +296,7 @@ class InstallRepository
 
         // $response = {"message": "Your license verified successfull.","goto": "http://localhost/classai/install/database"};
 
-        $response = json_decode('{"message": "Your license verified successfull.","goto": "http://localhost/classai/install/database"}', true);
+        $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
             // $response = curlIt($url);
         if (gv($response, 'goto')) {
             return $response;
@@ -355,7 +355,7 @@ class InstallRepository
         // $url = verifyUrl(config('spondonit.verifier', 'auth')) . '/api/cc?a=verify&u=' . app_url() . '&ac=' . $ac . '&i=' . config('app.item') . '&e=' . $e . '&c=' . $c . '&v=' . $v . '&current=' . urlencode(request()->path());
         // $response = curlIt($url);
         // $response = {"message": "Your license verified successfull.","goto": "http:\/\/localhost\classai\/install\/database"};
-        $response = json_decode('{"message": "Your license verified successfull.","goto": "http://localhost/classai/install/database"}', true);
+        $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
          
         if ($goto = gv($response, 'goto')) {
             return redirect($goto)->send();
@@ -686,7 +686,7 @@ class InstallRepository
         // $response = curlIt($url);
 
         // $response = {"message": "Your license verified successfull.","goto": "http:\/\/localhost\classai\/install\/database"};
-        $response = json_decode('{"message": "Your license verified successfull.","goto": "http://localhost/classai/install/database"}', true);
+        $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
          
         
         $status = gbv($response, 'status');
