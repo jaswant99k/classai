@@ -1,0 +1,4 @@
+1. It's implemented for school wise fees payment from student and parent panel for existing and Add-on fees.
+2. The razorpay package installed in razorpay module's root.
+3. It can active/inactive from system settings. 
+4. Razpr pay module implemented for saas and regular school.

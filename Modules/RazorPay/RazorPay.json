@@ -1,0 +1,20 @@
+{
+    "RazorPay": {
+        "item_id": "27721206",
+        "migration": {
+            "no_table":"Modules/RazorPay/Database/Migrations/2020_07_05_125524_create_razor_pays_table.php"
+        },
+        "names": [
+
+        ],
+        "versions": [
+            "3.0.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is Razor Pay module for Online payemnt. Thanks for using."
+        ]
+    }
+}

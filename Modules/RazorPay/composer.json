@@ -1,0 +1,28 @@
+{
+    "name": "nwidart/razorpay",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\RazorPay\\Providers\\RazorPayServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\RazorPay\\": ""
+        }
+    },
+    "require": {
+        "razorpay/razorpay": "^2.5"
+    }
+}
