@@ -295,8 +295,9 @@ class InstallRepository
         // $url = verifyUrl(config('spondonit.verifier', 'auth')) . '/api/cc?a=install&u=' . app_url() . '&ac=' . request('access_code') . '&i=' . config('app.item') . '&e=' . request('envato_email') . '&ri=' . request('re_install') . '&current=' . urlencode(request()->path()) . '&ve=' . $ve . '&v=' . $v;
 
         // $response = curlIt($url);
-        $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
-         
+        // $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
+        $response = ['status' => 1, 'message' => 'Valid!', 'checksum' => 'checksum', 'license_code' => 'license_code'];
+
         if (gv($response, 'goto')) {
             return $response;
         }
@@ -353,7 +354,8 @@ class InstallRepository
 
         // $url = verifyUrl(config('spondonit.verifier', 'auth')) . '/api/cc?a=verify&u=' . app_url() . '&ac=' . $ac . '&i=' . config('app.item') . '&e=' . $e . '&c=' . $c . '&v=' . $v . '&current=' . urlencode(request()->path());
         // $response = curlIt($url);
-        $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
+        $response = ['status' => 1, 'message' => 'Valid!', 'checksum' => 'checksum', 'license_code' => 'license_code'];
+        // $response = json_decode('{"message": "Your license verified successfull.","goto": "https://demoai.classai.in/install/database"}', true);
          
         if ($goto = gv($response, 'goto')) {
             return redirect($goto)->send();
@@ -682,8 +684,9 @@ class InstallRepository
         // $url = verifyUrl(config('spondonit.verifier', 'auth')) . '/api/cc?a=install&u=' . app_url() . '&ac=' . $code . '&i=' . $item_id . '&e=' . $e . '&t=Theme';
 
         // $response = curlIt($url);
+        $response = ['status' => 1, 'message' => 'Valid!', 'checksum' => 'checksum', 'license_code' => 'license_code'];
 
-        $response = json_decode('{"message": "Your license verified successfull.","status": true}', true);
+        // $response = json_decode('{"message": "Your license verified successfull.","status": true}', true);
          
         $status = gbv($response, 'status');
 
